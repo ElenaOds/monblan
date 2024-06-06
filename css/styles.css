@@ -1,0 +1,344 @@
+:root {
+    --primary-text-color: #000000;
+    --secondary-text-color: #636264;
+    --button-text-color: #929292;
+    --bg-color: #E5E5E5;
+    --secondary-bg-color: #FFFFFF;
+    --blue-color: #3D8EDA;
+    --border-color: #DEDEDE;
+    --btn-background: #C8C8C8;
+}
+
+
+body {
+    @media screen and (max-width: 580px) {
+        background-size: 60%;
+    }
+
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    font-family: Roboto;
+    font-weight: 400;
+    background-image: url('../assets/images/vector_1mobile@1x.png');
+    background-repeat: no-repeat;
+    background-size: 43%;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 2dpi) {
+        background-image: url('../assets/images/vector_1mobile@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+        background-size: 43%;
+        background-image: url('../assets/images/vector_1tablet@1x.png');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+            background-image: url('../assets/images/vector_1tablet@2x.png');
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-image: url('../assets/images/vector_1desktop@1x.png');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 2dpi) {
+            background-image: url('../assets/images/vector_1desktop@2x.png');
+        }
+    }
+}
+
+ul {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+  }
+
+.header {
+    display: flex;
+    align-items: center;  
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.67);
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12),
+    inset 0px 12px 24px rgba(0, 0, 0, 0.12);
+    padding: 2px 0 10px 0;
+    z-index: 10;
+
+    @media screen and (min-width: 480px) {
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 600px) {
+        gap: 50px;
+    }
+ 
+    @media screen and (min-width: 768px) {
+        padding: 4px 0 16px 0;
+        gap: 72px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 6px 0 18px 0;
+        gap: 86px;
+    }
+}  
+
+.header-logo {
+    display: block;
+    margin-left: 5%;
+    min-width: 46px;
+
+    @media screen and (min-width: 480px) {
+        margin-left: 15%;
+    }
+
+    @media screen and (min-width: 600px) {
+        margin-left: 25%;
+    }
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    @media screen and (min-width: 768px) {
+        gap: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 16px;
+    }
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        gap: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 16px;
+    }
+}
+
+.title {
+    font-family: Montserrat;
+    font-weight: 500; 
+    font-size: 16px;
+    color: var(--primary-text-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+    }
+}
+
+.header-text {
+    border: 1px solid var(--blue-color);
+    border-radius: 2px;
+    padding: 2px 8px;
+    text-align: center;
+    color: var(--blue-color);
+    font-size: 9px;
+    letter-spacing: -0.03em;
+
+
+    @media screen and (min-width: 768px) {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+.statistics-list {
+    display: flex;
+    gap: 13px;
+
+    @media screen and (min-width: 768px) {
+        gap: 17px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 27px;
+    }
+}
+
+.statistics-item {
+    font-size: 10px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+    }
+}
+
+.statistics-item > span {
+    font-weight: 700;
+}
+
+.datepicker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+   
+ 
+    @media screen and (min-width: 768px) {
+        gap: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 24px;
+    }
+}
+
+.datepicker-label {
+    font-size: 12px;
+    margin-right: -4px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        margin-right: -6px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        margin-right: -13px;
+    }
+}
+
+.date-label {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 18px;
+    background-color: var(--btn-background);
+    border-radius: 4px;
+    border: none;
+
+    @media screen and (min-width: 768px) {
+        width: 148px;
+        height: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 162px;
+        height: 28px;
+    }
+}
+
+
+.date-input {
+    height: 100%;
+    width: 94px;
+    outline: none; 
+    border-radius: 4px 0 0 4px;
+    padding: 2px;
+    font-size: 9px;
+    color: #636264;
+    border: 1px solid var(--border-color);
+
+    @media screen and (min-width: 768px) {
+        width: 100px;
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 114px;
+        padding: 7px;
+        font-size: 13px;
+    }
+}
+
+.date-input > placeholder {
+    font-size: 9px;
+    color: #636264;
+
+    @media screen and (min-width: 768px) {
+        font-size: 11px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 13px;
+    }   
+}
+
+.date-button {
+    display: block;
+    position: relative;
+    border: none;
+    padding: 1px;
+    cursor: pointer;
+    width: 18px;
+    height: 100%;
+    border: 1px solid var(--border-color);
+
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        padding: 2px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 30px;
+        padding: 2px;
+    }   
+
+}
+
+.date-icon {
+    width: 16px;
+    height: 16px;
+
+    @media screen and (min-width: 768px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 24px;
+        height: 24px;
+    }  
+}
+
+
+.date-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--border-color);
+}
+
+.calendar-button {
+    border-radius: 0 4px 4px 0;
+    border: 1px solid var(--border-color);
+}
