@@ -15,15 +15,15 @@
     <header class="header">
         <a href="./index.html" class="header-logo">
             <img srcset="
-                ../assets/images/logo_mobile@1x.png 46w,
-                ../assets/images/logo_mobile@2x.png 96w,
-                ../assets/images/logo_tablet@1x.png 72w,
-                ../assets/images/logo_tablet@2x.png 144w,
-                ../assets/images/logo_desktop@1x.png 138w,
-                ../assets/images/logo_desktop@2x.png 276w"
-                src="../assets/images/logo_mobile@1x.png" 
+                ./assets/images/logo_mobile@1x.png 46w,
+                ./assets/images/logo_mobile@2x.png 96w,
+                ./assets/images/logo_tablet@1x.png 72w,
+                ./assets/images/logo_tablet@2x.png 144w,
+                ./assets/images/logo_desktop@1x.png 138w,
+                ./assets/images/logo_desktop@2x.png 276w"
+                src="./assets/images/logo_mobile@1x.png" 
                 alt="Logo" 
-                sizes="(min-width: 1280px) 138px, (min-width: 768px) 80px, 46px">  
+                sizes="(min-width: 1280px) 138px, (min-width: 768px) 72px, 46px">  
         </a>
         <div class="header-wrapper">
          <div class="title-wrapper">
@@ -43,7 +43,7 @@
                       name="from"
                       placeholder="from"
                       class="date-input"/>
-                      <button type="button" class="date-button">
+                      <button type="button" class="date-button reset">
                        <svg area-label="clear cross icon" class="date-icon">
                             <use href="./assets/sprite.svg#icon-cross"></use>
                         </svg>     
@@ -60,8 +60,8 @@
                       type="text"
                       name="to"
                       placeholder="to"
-                      class="date-input"/>
-                      <button type="button" class="date-button">
+                      class="date-input end-date-input"/>
+                      <button type="button" class="date-button reset-btn">
                        <svg area-label="clear cross icon" class="date-icon">
                             <use href="./assets/sprite.svg#icon-cross"></use>
                         </svg>     
@@ -76,8 +76,394 @@
             </div>
         </div>
     </header>
-    
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <ul class="button-list">
+                    <li>
+                        <button type="button" class="grid-btn">
+                        <svg area-label="calendar icon" class="grid-icon-active">
+                            <use href="./assets/sprite.svg#icon-grid"></use>
+                        </svg> 
+                        <svg area-label="calendar icon" class="grid-icon">
+                            <use href="./assets/sprite.svg#icon-icon-grid-active"></use>
+                        </svg> 
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="row-btn is-active">
+                        <svg area-label="calendar icon" class="row-icon-active is-active">
+                            <use href="./assets/sprite.svg#icon-rows"></use>
+                        </svg> 
+                         <svg area-label="calendar icon" class="row-icon is-active">
+                            <use href="./assets/sprite.svg#icon-icon-row-active"></use>
+                        </svg>  
+                        </button>
+                    </li>
+                </ul>
+
+              <ul class="cards-list">
+                <li class="card-item">
+                     <img srcset="
+                    ./assets/images/img1row@1x.png 86w,
+                    ./assets/images/img1row@1x.png 172w,
+                    ./assets/images/img1@1x.png 203w,
+                    ./assets/images/img1@2x.png 406w"
+                src="./assets/images/img1@1x.png 203w" 
+                alt="sky" 
+                width="86"
+                class="card-image"> 
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                   
+                    <p class="card-details-info">Image upload</p>
+                    <p class="card-date" >11-04-2016</p> 
+                </div>
+                </li>
+
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img2row@1x.png 86w,
+                    ./assets/images/img2row@1x.png 172w,
+                    ./assets/images/img2@1x.png 203w,
+                    ./assets/images/img2@2x.png 406w"
+                src="./assets/images/img2@1x.png 203w" 
+                alt="sea" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                    <p class="card-details-info">Image upload</p>
+                    <p class="card-date" >11-04-2016</p>       
+                </div>
+                </li>
+
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img3row@1x.png 86w,
+                    ./assets/images/img3row@1x.png 172w,
+                    ./assets/images/img3@1x.png 203w,
+                    ./assets/images/img3@2x.png 406w"
+                src="./assets/images/img3@1x.png 203w" 
+                alt="sky" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div>                  
+                    <p class="card-details-info">Image upload</p>
+                    <p class="card-date" >11-04-2016</p>  
+                </div>
+                </li>
+
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img4row@1x.png 86w,
+                    ./assets/images/img4row@1x.png 172w,
+                    ./assets/images/img4@1x.png 203w,
+                    ./assets/images/img4@2x.png 406w"
+                src="./assets/images/img4@1x.png 203w" 
+                alt="sea" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                   
+                    <p class="card-details-info">Image upload</p>
+                        <p class="card-date" >11-04-2016</p> 
+                   
+                </div>
+
+
+                </li>
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img5row@1x.png 86w,
+                    ./assets/images/img5row@1x.png 172w,
+                    ./assets/images/img5@1x.png 203w,
+                    ./assets/images/img5@2x.png 406w"
+                src="./assets/images/img5@1x.png 203w" 
+                alt="man" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                   
+                    <p class="card-details-info">Image upload</p>
+                        <p class="card-date" >11-04-2016</p> 
+                   
+                </div>
+                </li>
+
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img6row@1x.png 86w,
+                    ./assets/images/img6row@1x.png 172w,
+                    ./assets/images/img6@1x.png 203w,
+                    ./assets/images/img6@2x.png 406w"
+                src="./assets/images/img6@1x.png 203w" 
+                alt="lady on the balcony" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                    <p class="card-details-info">Image upload</p>
+                    <p class="card-date" >11-04-2016</p>   
+                </div>
+                </li>
+
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img7row@1x.png 86w,
+                    ./assets/images/img7row@1x.png 172w,
+                    ./assets/images/img7@1x.png 203w,
+                    ./assets/images/img7@2x.png 406w"
+                src="./assets/images/img7@1x.png 203w" 
+                alt="room" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                    <p class="card-details-info">Image upload</p>
+                    <p class="card-date" >11-04-2016</p>    
+                </div>
+                </li>
+
+                <li class="card-item">
+                    <img srcset="
+                    ./assets/images/img1row@1x.png 86w,
+                    ./assets/images/img1row@1x.png 172w,
+                    ./assets/images/img1@1x.png 203w,
+                    ./assets/images/img1@2x.png 406w"
+                src="./assets/images/img1@1x.png 203w" 
+                alt="sky" 
+                width="86"
+                class="card-image">
+                <div class="card-info">
+                    <p class="card-title today">Today</p>
+                    <p class="card-title date">9-08-2016</p>
+                    <div class="card-info-item first">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">128</span>
+                    </div>
+                   
+                    <div class="card-info-item third">
+                        <svg area-label="heart" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="card-details-info">67</span>
+                    </div>
+                    <div class="card-info-item second">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">31</span>
+                    </div>
+                    <div class="card-info-item fourth">
+                        <svg area-label="comments" class="card-icon">
+                            <use href="./assets/sprite.svg#icon-comments"></use>
+                        </svg>
+                        <span class="card-details-info">22</span>
+                    </div> 
+                    <p class="card-details-info">Image upload</p>
+                    <p class="card-date" >11-04-2016</p> 
+                </div>
+                </li>
+
+              </ul>
+                  
+              <button type="button" class="load-button">Load more</button>
+            </div>
+        </section>
+    </main>
+   
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
     <script src="./js/datepicker.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/reset.js"></script>
 </body>
 </html>
