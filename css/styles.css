@@ -474,10 +474,12 @@ p {
     .grid-col & {
         flex-direction: column;
         gap: 0;
-        min-width: 203px;
-    
-       
+        min-width: 203px; 
     }
+}
+
+.hidden {
+    display: none;
 }
 
 .card-image {
@@ -611,5 +613,16 @@ p {
         background-color: var(--blue-color);
         border: 1px solid var(--blue-color);
         color: var(--secondary-bg-color);
+    }
+}
+
+.disabled {
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        border: 1px solid var(--button-text-color);
+        color: var(--button-text-color);
     }
 }
