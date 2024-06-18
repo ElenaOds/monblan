@@ -8,6 +8,7 @@
         hidden.splice(0, 4).forEach(
         elem => elem.classList.remove('hidden')
         )
+        e.target.blur()
   
     if (hidden.length === 0) {
         loadMore.classList.add('disabled');

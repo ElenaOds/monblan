@@ -205,13 +205,14 @@ p {
 }
 
 .datepicker-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30px 1fr;
     align-items: center;
-    gap: 12px;
-   
+    gap: 8px;
  
     @media screen and (min-width: 768px) {
-        gap: 18px;
+        grid-template-columns: 30px 1fr 1fr;
+        gap: 12px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -221,16 +222,18 @@ p {
 
 .datepicker-label {
     font-size: 12px;
-    margin-right: -4px;
-
+    @media screen and (max-width: 767px) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+  
     @media screen and (min-width: 768px) {
         font-size: 14px;
-        margin-right: -6px;
+ 
     }
 
     @media screen and (min-width: 1280px) {
         font-size: 16px;
-        margin-right: -13px;
     }
 }
 
@@ -241,7 +244,7 @@ p {
     height: 18px;
     background-color: var(--btn-background);
     border-radius: 4px;
-    border: none;
+    /* border: 1px solid var(--border-color); */
 
     @media screen and (min-width: 768px) {
         width: 148px;
@@ -254,6 +257,21 @@ p {
     }
 }
 
+.date-from {
+    @media screen and (max-width: 767px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+   
+}
+
+.date-to {
+    @media screen and (max-width: 767px) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+}
 
 .date-input {
     height: 100%;
@@ -263,7 +281,10 @@ p {
     padding: 2px;
     font-size: 9px;
     color: #636264;
-    border: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color); 
+    border-top: 1px solid var(--border-color); 
+    border-bottom: 1px solid var(--border-color); 
+    border-right: none; 
 
     @media screen and (min-width: 768px) {
         width: 100px;
@@ -296,10 +317,10 @@ p {
     position: relative;
     border: none;
     padding: 1px;
-    cursor: pointer;
     width: 18px;
     height: 100%;
-    border: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 
     @media screen and (min-width: 768px) {
         width: 24px;
@@ -328,6 +349,10 @@ p {
     }  
 }
 
+.reset,
+.reset-btn {
+    cursor: pointer;
+}
 
 .date-button:before {
     content: "";
@@ -337,11 +362,12 @@ p {
     width: 1px;
     height: 100%;
     background-color: var(--border-color);
+
 }
 
 .calendar-button {
     border-radius: 0 4px 4px 0;
-    border: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 .section {
